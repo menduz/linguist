@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: swift.tmbundle
-version: cec27af6662e3799120b208e64483efdfe5521f5
+version: 3f582e9acc1613745b06a56be55ba2a032c458eb
 license: permissive
 ---
 If not otherwise specified (see below), files in this repository fall under the following license:

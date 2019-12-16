@@ -117,7 +117,7 @@ class TestHeuristics < Minitest::Test
       "TeX" => all_fixtures("TeX", "*.cls"),
       "ObjectScript" => all_fixtures("ObjectScript", "*.cls"),
       # Missing heuristics
-      nil => all_fixtures("Apex", "*.cls") + all_fixtures("OpenEdge ABL", "*.cls") + all_fixtures("Visual Basic", "*.cls"),
+      nil => all_fixtures("Apex", "*.cls") + all_fixtures("OpenEdge ABL", "*.cls") + all_fixtures("VBA", "*.cls"),
     })
   end
 
@@ -264,6 +264,12 @@ class TestHeuristics < Minitest::Test
     })
   end
 
+  def test_mask_by_heuristics
+    assert_heuristics({
+      "Unity3D Asset" => all_fixtures("Unity3D Asset", "*.mask")
+    })
+  end
+
   def test_md_by_heuristics
     assert_heuristics({
       "Markdown" => all_fixtures("Markdown", "*.md"),
@@ -328,6 +334,13 @@ class TestHeuristics < Minitest::Test
     })
   end
 
+  def test_p_by_heuristics
+    assert_heuristics({
+      "Gnuplot" => all_fixtures("Gnuplot"),
+      "OpenEdge ABL" => all_fixtures("OpenEdge ABL")
+    }, alt_name="test.p")
+  end
+
   # Candidate languages = ["Hack", "PHP"]
   def test_php_by_heuristics
     assert_heuristics({
@@ -342,6 +355,13 @@ class TestHeuristics < Minitest::Test
       "Prolog" => all_fixtures("Prolog", "*.pl"),
       "Perl" => ["Perl/oo1.pl", "Perl/oo2.pl", "Perl/oo3.pl", "Perl/fib.pl", "Perl/use5.pl"],
       "Perl 6" => all_fixtures("Perl 6", "*.pl")
+    })
+  end
+
+  def test_plist_by_heuristics
+    assert_heuristics({
+      "OpenStep Property List" => all_fixtures("OpenStep Property List", "*.plist"),
+      "XML Property List" => all_fixtures("XML Property List", "*.plist")
     })
   end
 
@@ -362,9 +382,10 @@ class TestHeuristics < Minitest::Test
     })
   end
 
-  # Candidate languages = ["IDL", "Prolog", "QMake", "INI"]
+  # Candidate languages = ["IDL", "Proguard", "Prolog", "QMake", "INI"]
   def test_pro_by_heuristics
     assert_heuristics({
+      "Proguard" => all_fixtures("Proguard", "*.pro"),
       "Prolog" => all_fixtures("Prolog", "*.pro"),
       "IDL" => all_fixtures("IDL", "*.pro"),
       "INI" => all_fixtures("INI", "*.pro"),
@@ -372,7 +393,7 @@ class TestHeuristics < Minitest::Test
     })
   end
 
-# Candidate languages = ["INI", "Java Properties"]
+  # Candidate languages = ["INI", "Java Properties"]
   def test_properties_by_heuristics
     assert_heuristics({
       "INI" => all_fixtures("INI", "*.properties"),
@@ -486,9 +507,17 @@ class TestHeuristics < Minitest::Test
     })
   end
 
+  def test_v_by_heuristics
+    assert_heuristics({
+      "Coq" => all_fixtures("Coq", "*.v"),
+      "V" => all_fixtures("V", "*.v"),
+      "Verilog" => all_fixtures("Verilog", "*.v")
+    })
+  end
+
   def test_vba_by_heuristics
     assert_heuristics({
-      "Visual Basic" => all_fixtures("Visual Basic", "*.vba"),
+      "VBA" => all_fixtures("VBA", "*.vba"),
       "Vim script" => all_fixtures("Vim script", "*.vba")
     })
   end
@@ -503,6 +532,7 @@ class TestHeuristics < Minitest::Test
   def test_x_by_heuristics
     # Logos not fully covered
     assert_heuristics({
+      "DirectX 3D File" => all_fixtures("DirectX 3D File", "*.x"),
       "Linker Script" => all_fixtures("Linker Script", "*.x"),
       "RPC" => all_fixtures("RPC", "*.x")
     })

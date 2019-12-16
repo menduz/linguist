@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: MATLAB-Language-grammar
-version: e3c12b561b2ce76b6c4a98ec6367b7dc3a87d5d9
+version: 90dad4575a164f05161416864905eac4af1f8072
 license: bsd-2-clause
 ---
 Copyright 2018 The MathWorks, Inc.

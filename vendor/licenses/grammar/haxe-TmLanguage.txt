@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: haxe-TmLanguage
-version: e2b46c17fe8602cff236a7222de176021aafd9c7
+version: 858f9547f6aaf0a27cd3ed0d12f82aa0b2121d8f
 license: mit
 ---
 The MIT License (MIT)

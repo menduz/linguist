@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: language-html
-version: 153f176a006e1276888c9ff3309ab76ffebf0701
+version: 8ab471db6a9c2da9936dd9483bd4f05df24b0b2b
 license: mit
 ---
 Copyright (c) 2014 GitHub Inc.

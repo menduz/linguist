@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: Terraform.tmLanguage
-version: 3227a2d2a25dcb2625805ed4de04145c6cfbe912
+version: c683495c6414a172c58a39beaa952c822cbbcc84
 license: mit
 ---
 MIT License

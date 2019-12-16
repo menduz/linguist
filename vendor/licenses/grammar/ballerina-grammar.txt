@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: ballerina-grammar
-version: 3835bf94a4ceb8b06d89dc075a787f45891b6e51
+version: a00281a007801ef562ff0828f3609ef705519b59
 license: apache-2.0
 ---
                                  Apache License

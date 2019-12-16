@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: language-haskell
-version: f48ecdac0aebb966c01d7d78b1e545510b5a84a8
+version: 3c71c9eda5ab9ea094fd652df6688f9858073cb7
 license: mit
 ---
 The MIT License (MIT)

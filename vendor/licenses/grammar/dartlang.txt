@@ -1,7 +1,7 @@
 ---
 type: grammar
 name: dartlang
-version: f5018efde09392df021c241861d3eea016d4556c
+version: c5acdb2c8acfd2e5130ca5e94b380af02f8fafef
 license: bsd-3-clause
 ---
 Copyright 2015, the Dart project authors. All rights reserved.
